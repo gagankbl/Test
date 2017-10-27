@@ -6,14 +6,14 @@ def solution(A):
     for i in range(len(A)-1):
         print(i)
         for z in range(0,i):
-            #print("Z",z, A[z])
+            print("Z",z, A[z])
             sum1 += A[z]
         for x in range(i+1, len(A)):
-            #print("X", x, A[x])
+            print("X", x, A[x])
             sum2 += A[x]
-            #print("sum2", sum2)
-        #print("BREAK")
-        #print("SUM",sum1, sum2)
+            print("sum2", sum2)
+        print("BREAK")
+        print("SUM",sum1, sum2)
         if (sum1 == sum2):
             a.append(A[i])
         sum1 = 0
